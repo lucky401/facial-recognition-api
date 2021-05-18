@@ -8,7 +8,8 @@ const hoursToSeconds = (hours) => hours * 60 * 60;
 module.exports = {
   accessToken: {
     secret: process.env.ACCESS_TOKEN_SECRET,
-    validity: nodeEnv === 'development' ? '30d' : '5m',
+    // validity: nodeEnv === 'development' ? '30d' : '5m',
+    validity: nodeEnv === 'development' ? '30d' : '30d',
   },
   refreshToken: {
     secret: process.env.REFRESH_TOKEN_SECRET,
