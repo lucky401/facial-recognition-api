@@ -60,7 +60,7 @@ module.exports = class AuthService {
   }
 
   static refresh(refreshToken) {
-    const user = jwt.verify(refreshToken, config.auth.refreshToken.validity);
+    const user = jwt.verify(refreshToken, config.auth.refreshToken.secret);
 
     const tokenPayload = {
       name: user.name,

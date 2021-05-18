@@ -10,12 +10,21 @@ const User = mongoose.model(
       },
       email: {
         type: String,
+        index: true,
+        unique: true,
         require: true,
       },
       password: {
         type: String,
         require: true,
       },
+      images: [
+        {
+          url: String,
+          regions: [Object],
+          createdAt: { type: Date, default: Date.now },
+        },
+      ],
     },
     { timestamps: true },
   ),

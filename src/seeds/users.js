@@ -8,9 +8,10 @@ module.exports = {
   // list of data to be seeded
   data: [
     {
-      name: 'Farhan Hasin Chowdhury',
-      email: 'mail@farhan.info',
+      name: 'Lucky Dewa Satria',
+      email: 'lucky@mail.com',
       password: 'secret',
+      images: [],
     },
   ],
 };

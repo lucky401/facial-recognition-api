@@ -6,4 +6,5 @@ module.exports = {
   seeder: require('./seeder'),
   db: require('./db'),
   auth: require('./auth'),
+  clarifai: require('./clarifai'),
 };

@@ -5,7 +5,7 @@ ENV NODE_ENV=development
 # update npm to the latest minor version
 RUN npm install -g npm
 
-USER node
+# USER node
 RUN mkdir -p /home/node/app
 WORKDIR /home/node/app
 
